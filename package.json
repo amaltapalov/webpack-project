@@ -1,0 +1,57 @@
+{
+  "name": "webpack-project",
+  "version": "1.0.0",
+  "description": "Webpack project",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.server-for-html.js",
+    "server": "webpack-dev-server --open --config webpack.server-for-php.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amalius-99/webpack-project"
+  },
+  "keywords": [
+    "webpack",
+    "project",
+    "base",
+    "web page"
+  ],
+  "author": "Amal Tapalov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amalius-99/webpack-project/issues"
+  },
+  "homepage": "https://github.com/amalius-99/webpack-project#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.6.0",
+    "imports-loader": "^0.8.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.6.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "write-assets-webpack-plugin": "^1.0.4"
+  },
+  "dependencies": {
+    "bootstrap": ">=4.3.1",
+    "gsap": "^2.1.2",
+    "jquery": "^3.3.1",
+    "scrollmagic": "^2.0.6"
+  }
+}
