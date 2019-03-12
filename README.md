@@ -1,6 +1,5 @@
-# Webpack
 ![alt text](https://raw.githubusercontent.com/amalius-99/webpack-project/master/src/images/webpack.png)
-Simple webpack based project backbone for small and medium projects (i.e. landing pages).
+* Simple webpack based project backbone for small and medium projects (i.e. landing pages).
 
 ## Features:
 * ES6 -> ES5 (babel) -> Minimized
