@@ -1,17 +1,4 @@
-/**
- * Default Libraries
- * If you don't need some libraries, remove unnesessary imports and that's it.
- * -------------------------------------------------------------------------- */
-// Importing styles
-import './styles.scss';
+import "./scss/index.scss";
+import "./js/gsap-scrollmagic-sample.js"; // GSAP + ScrollMagic sample
 
-// GSAP + ScrollMagic sample
-import './js/gsap-scrollmagic-sample.js';
-/* -------------------------------------------------------------------------- */
-
-
-/* Start coding here ---------------------------------------------------------*/
-(() => {
-    console.log("hello world! i am a webpack");
-})();
-/* -------------------------------------------------------------------------- */
+console.log("%c enjoy 😊!", "color: #ff0000");
