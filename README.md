@@ -1,95 +1,103 @@
-![alt text](https://raw.githubusercontent.com/amalius-99/webpack-project/master/src/images/webpack.png)
-* Simple webpack based project backbone for small and medium projects (i.e. landing pages).
+![alt text](https://raw.githubusercontent.com/amalius-99/webpack-project/master/webpack.png)
 
-## Features:
-* ES6 -> ES5 (babel) -> Minimized
-* SCSS -> CSS -> Prefixed -> Minimized
-* Images -> Minimized
-* Live Reaload + HMR -> stream to Apache
+-   Simple webpack based project backbone for small and medium projects.
 
-## Libraries:
-* Twitter Bootstrap mixins + utilities + grid + reboot
-* jQuery (you can use ```$()``` and ```jQuery()``` globally) - disabled by default
-* GreenSock tools
-* ScrollMagic
+# Webpack based project backbone
 
-## Requirements:
-* Nodejs 8+
-* NPM 6+
+Simple webpack based project backbone for small and medium projects.
 
-## Usage:
-First of all download all the dependencies:
-```
-cd path_to_webpack
-```
-```
-npm install
-```
-Then you have two options:
-### Use index.html without php server support:
-* Launch webpack server (localhost:5000) and start developing in [src](./src) directory.
-```
-npm run start
-```
-* Once you are ready to deploy the project on real server.
-```
-npm run build
+## Features
+
+-   ES6 -> ES5 (babel) -> Minimized
+-   SCSS -> CSS -> PostCSS(autoprefixer) -> Minimized
+-   Images -> Minimized
+-   Live Reaload + HMR
+
+## Libraries
+
+-   Twitter Bootstrap mixins + utilities + grid + reboot
+-   jQuery (you can use `$()` and `jQuery()` globally) - disabled by default
+-   GreenSock tools
+-   ScrollMagic
+
+Note: if you want to disable/enable some libraries see [FAQ](https://github.com/amaltapalov/webpack-project#faq)
+
+## Requirements
+
+-   nodejs 8+
+-   npm 6+
+-   yarn 1.15 + `npm i -g yarn`
+
+## Usage
+
+Download all dependencies:
+
+```bash
+cd path/to/webpack-project-backbone
 ```
 
-### Use index.php with php server
-* Change [index.html](./src/index.html) to ```index.php``` in [src](./src) directory.
-* Update [webpack.prod.js](./webpack.prod.js) file to:
+```bash
+yarn
 ```
-new HtmlWebpackPlugin({
-  filename: 'index.php',
-  template: 'src/index.php'
-}),
+
+For development:
+
+```bash
+yarn start
 ```
-* Run the webpack server. It serve assets on localhost:9000 and stream them to your php server (like localhost:8080).
+
+For deployment:
+
+```bash
+yarn build
 ```
-npm run server
-```
-* Once you are ready to deploy the project on real server.
- ```
- npm run build
- ```
+
+enjoy hacking 😊
 
 ## FAQ
+
 ### How to add Google Fonts
-Use the import command in ```css/scss``` file.
-Example: ```@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");```
+
+Use the import command in `css/scss` file.
+Example: `@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");`
 
 ### How to enable jQuery
+
 In all webpack configuration files [[webpack.prod.js](./webpack.prod.js), [webpack.server-for-html.js](./webpack.server-for-html.js), [webpack.server-for-php.js](./webpack.server-for-php.js)] uncomment the following lines:
-```
+
+```js
 new webpack.ProvidePlugin({
-    // $: 'jquery',
-    // jQuery: 'jquery'
-})
+	// $: 'jquery',
+	// jQuery: 'jquery'
+});
 ```
 
 ### How to disable Twitter Bootstrap
+
 Simply remove bootstrap related import from [styles.scss](./src/styles.scss)
-```
+
+```scss
 // Bootstrap
-@import './scss/bootstrap';
+@import "./bootstrap";
 ```
 
-### How to use GreenSock / ScrollMagic in other files
+### How to use GreenSock / ScrollMagic
+
 Copy and paste to any file you want to use these tools:
-```
-import TweenMax from 'gsap/src/minified/TweenMax.min';
-import TimelineMax from 'gsap/src/minified/TimelineMax.min';
-import ScrollMagic from 'scrollmagic/scrollmagic/minified/ScrollMagic.min';
-import 'scrollmagic/scrollmagic/minified/plugins/animation.gsap.min';
+
+```js
+import TweenMax from "gsap/src/minified/TweenMax.min";
+import TimelineMax from "gsap/src/minified/TimelineMax.min";
+import ScrollMagic from "scrollmagic/scrollmagic/minified/ScrollMagic.min";
+import "scrollmagic/scrollmagic/minified/plugins/animation.gsap.min";
 // For development only
 // import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
 ```
 
-## Useful links
-* [Bootstrap - open source toolkit for developing](https://getbootstrap.com/)
-* [GreenSock - getting started presentation](https://greensock.com/jump-start-js)
-* [GreenSock cheat sheet](https://ihatetomatoes.net/greensock-cheat-sheet/)
-* [ScrollMagic docs](https://github.com/janpaepke/ScrollMagic/wiki/Getting-Started-:-How-to-use-ScrollMagic)
-* [ScrollMagic Scene Manipulation](http://scrollmagic.io/examples/basic/scene_manipulation.html)
-* [Scroll + GSAP config help](https://www.grzegorowski.com/scrollmagic-setup-for-webpack-commonjs/)
+## References
+
+-   [GreenSock - getting started presentation](https://greensock.com/jump-start-js)
+-   [GreenSock cheat sheet](https://ihatetomatoes.net/greensock-cheat-sheet/)
+-   [ScrollMagic docs](https://github.com/janpaepke/ScrollMagic/wiki/Getting-Started-:-How-to-use-ScrollMagic)
+-   [ScrollMagic Scene Manipulation](http://scrollmagic.io/examples/basic/scene_manipulation.html)
+-   [Scroll + GSAP config help](https://www.grzegorowski.com/scrollmagic-setup-for-webpack-commonjs/)
