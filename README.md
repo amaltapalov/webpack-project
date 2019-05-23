@@ -1,6 +1,6 @@
 ![alt text](https://raw.githubusercontent.com/amalius-99/webpack-project/master/webpack.png)
 
-# Simple webpack based project backbone for small and medium projects.
+## Simple webpack based project backbone for small and medium projects.
 
 # Webpack based project backbone
 
