@@ -1,6 +1,9 @@
-![alt text](https://raw.githubusercontent.com/amalius-99/webpack-project/master/webpack.png)
-
-## Simple webpack for small and medium projects.
+<p align="center">
+  <img src="./webpack.png" />
+</p>
+<p align="center">
+Simple webpack for small and medium projects
+</p>
 
 ## Features
 
