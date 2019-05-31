@@ -5,14 +5,14 @@
 Simple webpack for small and medium projects
 </p>
 
-## Features
+## :bulb: Features
 
 -   ES6 -> ES5 (babel) -> Minimized
 -   SCSS -> CSS -> PostCSS(autoprefixer) -> Minimized
 -   Images -> Minimized
 -   Live Reaload + HMR
 
-## Libraries
+## :books: Libraries
 
 -   Twitter Bootstrap mixins + utilities + grid + reboot
 -   jQuery (you can use `$()` and `jQuery()` globally) - disabled by default
@@ -53,7 +53,7 @@ yarn build
 
 enjoy hacking 😊
 
-## FAQ
+## :question: FAQ
 
 ### How to add Google Fonts
 
@@ -93,7 +93,7 @@ import "scrollmagic/scrollmagic/minified/plugins/animation.gsap.min";
 // import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
 ```
 
-## Useful links
+## :link: Useful links
 
 -   [GreenSock - getting started presentation](https://greensock.com/jump-start-js)
 -   [GreenSock cheat sheet](https://ihatetomatoes.net/greensock-cheat-sheet/)
