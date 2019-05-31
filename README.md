@@ -90,7 +90,7 @@ import "scrollmagic/scrollmagic/minified/plugins/animation.gsap.min";
 // import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
 ```
 
-## References
+## Useful links
 
 -   [GreenSock - getting started presentation](https://greensock.com/jump-start-js)
 -   [GreenSock cheat sheet](https://ihatetomatoes.net/greensock-cheat-sheet/)
