@@ -5,7 +5,7 @@
 Simple webpack for small and medium projects
 </p>
 
-## :bulb: Features
+## :star: Features
 
 -   ES6 -> ES5 (babel) -> Minimized
 -   SCSS -> CSS -> PostCSS(autoprefixer) -> Minimized
