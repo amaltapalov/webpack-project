@@ -62,7 +62,7 @@ Example: `@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600
 
 ### How to enable jQuery
 
-In all webpack configuration files [[webpack.prod.js](./webpack.prod.js), [webpack.server-for-html.js](./webpack.server-for-html.js), [webpack.server-for-php.js](./webpack.server-for-php.js)] uncomment the following lines:
+In all webpack configuration files [[webpack.prod.js](./webpack.prod.js), [webpack.server-for-html.js](./webpack.server-for-html.js) uncomment the following lines:
 
 ```js
 new webpack.ProvidePlugin({
